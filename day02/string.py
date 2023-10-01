@@ -60,3 +60,19 @@ print(s.lower().count('java'))
 s1 = 'java'
 s2 = 'JAVA'
 print(s1.lower() == s2.lower())
+
+s = 'Python'
+print(s.isupper()) #isupper method looks whole letter false
+print(s[0].isupper()) #first letter is upper so it's True
+
+print(s.islower())
+print(s[1].islower())
+s = s.lower()
+print(s.islower())
+print("----------------------------")
+print(s.isalpha())
+s = '123'
+print(s.isdigit())
+
+s = 'Python Is Programing Language'
+print(s.istitle()) #every first letter must be capital
