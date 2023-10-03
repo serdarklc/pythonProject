@@ -73,3 +73,11 @@ concat('BMW',4.20, 2024, 'M', '0 km')
 concat('BMW','Mercedes','Tesla',False, True)
 concat(23, 45, 56, 'string')
 
+"""
+Dynamic Typing
+1.Declaring
+2.Parameters
+3.Restricting parameters data type
+4.Setting default value to parameter
+5.Restricting return type
+"""
