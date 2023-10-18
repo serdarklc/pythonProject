@@ -95,3 +95,70 @@ print(list_elements)
 
 tuple_elements = tuple(list_elements)
 print(tuple_elements)
+
+list1 = [1,2,3,4,5]
+list2 = [1,2,3,4,5]
+
+print(list1 is list2) # False because list is changeable, object is stored in memory separately
+
+tuple1 = (1,2,3,4,5)
+tuple2 = (1,2,3,4,5)
+
+print(tuple1 is tuple2) # True because tuple is immutable
+
+print("---------------------------------------------")
+
+groceries_list = ['Egg', 'Milk', 'Rice']
+
+groceries_list.append('Chicken') # single element will be added
+groceries_list.extend(('Beef','Orange', 'Onion')) # multiple elements will be added
+print(groceries_list)
+
+groceries_list.remove('Beef')
+print(groceries_list)
+
+groceries_list.pop() # the last item will be removed automatically
+print(groceries_list)
+
+groceries_list.pop(1) # the item is placed on the first index will be removed
+print(groceries_list)
+
+groceries_list.insert(2,'Apple')
+print(groceries_list)
+
+print(groceries_list.index('Rice'))
+
+groceries_list.append('Apple')
+print(groceries_list.count('Apple'))
+
+print('-----------Comprehensions--------------')
+
+nums = []
+
+for x in range(1,51):
+    nums.append(x)
+
+print(nums)
+"""
+new_list = []
+for x in range(1,51):
+    if x % 5 == 0:
+        new_list.append(x)
+print(new_list)
+"""
+
+new_list = [x for x in nums if x % 5 == 0]
+print(new_list)
+
+print("---------------------------------------------")
+tuple3 = tuple ([x for x in nums if x % 5 == 0])  # tuple does not support comprehension
+print(tuple3)
+
+
+
+
+
+
+
+
+
