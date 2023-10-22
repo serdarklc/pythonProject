@@ -154,8 +154,25 @@ print("---------------------------------------------")
 tuple3 = tuple ([x for x in nums if x % 5 == 0])  # tuple does not support comprehension
 print(tuple3)
 
+print("---------------------------------------------")
 
+nums = []
+for x in range(100):
+    nums.append(x)
+print(nums)
 
+even_number = [x for x in nums if x % 2 == 0]
+print(even_number)
+
+odd_number = [x for x in nums if x % 2 != 0]
+print(odd_number)
+
+print("---------------------------------------------")
+
+names = ['Python', 'Java', 'Java', 'JavaScript', 'java', 'JaVA', 'Ruby']
+
+new_list = [x for x in names if x.upper() != 'JAVA']
+print(new_list)
 
 
 
